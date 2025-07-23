@@ -1,0 +1,15 @@
+@charset "utf=8";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap');
+body {
+    font-family: "Plus Jakarta Sans","Zen Kaku Gothic New", sans-serif;
+    font-size: 1.6rem;
+    color: #000;
+    background-color: #fff;
+	line-height: 1.5;
+	-webkit-text-size-adjust:100%;
+}
+.mv {
+    background:
+        url(../img/mv_bg.jpg) 80px center / cover,
+        linear-gradient(0deg, #f7fff9, #c2e8cc);
+}
