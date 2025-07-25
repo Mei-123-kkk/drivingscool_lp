@@ -8,7 +8,7 @@ body {
 	line-height: 1.5;
 	-webkit-text-size-adjust:100%;
 }
-.btn_reservation {max-width: 380px;}
+.btn_reservation, .btn_contact {max-width: 380px;}
 .mv {
     padding: 40px 0 100px;
     background:linear-gradient(0deg, #f7fff9, #c2e8cc);
@@ -95,6 +95,7 @@ span.big {
 .price {
     font-size: 1.8rem;
     font-weight: 700;
+    text-align: center;
 }
 .price .orange {
     font-size: 6rem;
@@ -355,6 +356,7 @@ span.bold {font-weight: 700;}
 }
 
 /* guidance */
+.guidance {display: flex; flex-direction: column;}
 .guidance h2 {
     background: #7BC47F;
     padding: 35px 20px;
@@ -364,11 +366,161 @@ span.bold {font-weight: 700;}
     text-align: center;
 }
 .guidance h2 .now {font-size: 1.5rem;}
+.guidance_content {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-image: linear-gradient(0deg, #fff, #a4daa7);
+}
+.guidance_content p:first-of-type {font-size: 2.5rem; font-weight: 700; text-align: center;}
 .guidance_content .table_item {display: flex; gap: 25px; border-bottom: #2E8B57 solid 1px; padding: 15px 5px;}
 .guidance_content dt {width: 80px;}
 .guidance_content dd {width: calc(100% - 80px - 25px);}
 .guidance_content li {list-style-type: disc; list-style-position: inside;}
 .guidance_content li::marker {font-size: 0.7em;}
+
+/* instructor */
+.instructor h2 {font-size: 3rem; font-weight: 700; text-align: center; margin-bottom: 30px;}
+.instructor_wrap {display: flex; flex-wrap: wrap; justify-content: center; gap:30px}
+.introduction__wrap {width: 100%;}
+.introduction__wrap figure {width: 250px; margin: auto;}
+.instructor_name {display: flex; justify-content: center; margin: 10px 0;}
+.instructor_name p:nth-last-of-type(2) {font-size: 2.3rem; font-weight: 700;}
+.instructor_name p:last-of-type {color: #2E8B57;}
+.achievements {
+    padding: 10px 0;
+    border-top: #2E8B57 solid 1px;
+    border-bottom: #2E8B57 solid 1px;
+    display: flex; justify-content: center;
+}
+.comment {background: #D4F5DC; border-radius: 10px; padding: 20px; margin: 30px auto;}
+.comment h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    background: #7BC47F;
+    border-radius: 6px;
+    padding: 5px 0;
+    margin-bottom: 10px;
+}
+
+/* flow */
+.flow {margin-bottom: 50px; background: #D4F5DC; padding-bottom: 50px;}
+.flow_title {padding: 35px 0; margin-bottom: 20px; text-align: center;}
+.flow_title h2 {font-size: 3rem; font-weight: 700; margin-bottom: 5px;}
+.flow_title p {font-weight: 700;}
+.flow_title p .orange {font-size: 4rem; line-height: 1;}
+.flow_wrap {display: flex; flex-direction: column; gap: 30px;}
+.flow_wrap li {display: flex; gap: 16px; align-items: center;}
+.number {display: flex; flex-direction: column; align-items: center; color: #7BC47F;}
+.number p {font-family:"Plus Jakarta Sans"; font-weight: 700;}
+.number p:last-of-type {font-size: 3rem; border-bottom: #7BC47F solid 2px;}
+.text_box {padding: 15px; background: #fff; border-radius: 10px;}
+.text_box h3 {font-size: 2rem; font-weight: 700; color: #2E8B57; text-align: center; margin-bottom: 10px;}
+.text_box h3 .hearing {font-size: 1.5rem;}
+
+/* faq */
+.faq {background: #D4F5DC; margin-bottom: 60px;}
+.faq h2 {font-size: 3rem; font-weight: 700; padding: 35px 0 55px; text-align: center;}
+/* アコーディオン */
+.accordion_set {
+    padding: 25px 10px;
+    border-top: #2E8B57 solid 2px;
+    display: flex;
+}
+.accordion_q {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+}
+.question, .answer {
+    font-size: 2rem;
+    font-weight: 700;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.question {color: #2E8B57;}
+.answer {color: #FF9D14;}
+.question_text, .answer_text {display: flex; justify-content: space-between; width: 100%;}
+.question_text p {font-weight: 700;}
+.arrow {display: flex; width: 20px; justify-content: center; padding-top: 7px; flex-shrink: 0;}
+.arrow::before {
+    content: '';
+    transform: translateY(-25%) rotate(45deg);
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #2E8B57;
+    border-right: 2px solid #2E8B57;
+    transition: transform .3s;
+}
+.answer_text .arrow {opacity: 0;}
+.accordion_q.is-active .arrow::before {transform: rotate(225deg);}
+.accordion_a {
+    display: flex;
+    line-height: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition-duration: .3s;
+}
+.accordion_a.is-open {
+    line-height: normal; /* numberに書き換える*/
+    height: auto;
+    opacity: 1;
+    margin-top: 20px;
+}
+
+/* contact */
+.inquiry {margin-bottom: 85px;}
+.inquiry .cta_explanation01::before, .inquiry .cta_explanation01::after {background: #2E8B57;}
+.inquiry .cta_explanation02 {display: flex; align-items: center; gap: 10px;}
+.inquiry .cta_explanation02 img {width: 33px;}
+.inquiry .cta_explanation02 a {font-family:"Plus Jakarta Sans"; font-weight: 500; color: #FF9D14;}
+
+/* news */
+.news {background: #D4F5DC; padding-bottom: 50px;}
+.news h2 {font-size: 3rem; font-weight: 700; padding: 35px 0 55px; text-align: center;}
+.news li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    border-top: #2E8B57 solid 2px;
+    padding: 20px 5px;
+}
+.date {width: 100%; font-weight: 700;}
+.news_content {
+    display: flex;
+    gap: 10px;
+}
+.category {
+    color: #fff;
+    background: #FF9D14;
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    flex-shrink: 0;
+}
+.news li:last-of-type {justify-content: right;}
+.btn_detail a {color: #fff; background: #7BC47F; padding: 5px 12px; border-radius: 20px;}
+
+/* footer */
+footer {background: #D4F5DC; padding: 50px 0; text-align: center;}
+.hours, .dial, .phone {display: flex; align-items: center; justify-content: center; gap: 15px;}
+.hours {margin: 0 auto 35px;}
+.hours img {width: 30px;}
+.hours p {font-size: 1.3rem;}
+.info {display: flex; flex-wrap: wrap; gap: 30px 50px; justify-content: center; margin-bottom: 35px;}
+.dial img {width: 30px;}
+.phone img {width: 17px;}
+p.info_number {font-family:"Plus Jakarta Sans"; font-size: 2.5rem; font-weight: 700; color: #FF9D14;}
+.footer_logo {width: 245px; margin-bottom: 13px;}
+small {font-size: 1.2rem;}
 
 
 /* 【TB】---------- */
