@@ -26,24 +26,24 @@
         <div class="content summary">
             <div class="summary01">
                 <img src="img/lesson_title.png" alt="ペーパードライバー体験講習">
-                <div class="lesson_wrap">
-                    <div class="lesson">
+                <ul class="lesson_wrap">
+                    <li class="lesson">
                         <img src="img/lesson_icon01.png" alt="講師との相性チェック">
                         <p>講師との<br>相性チェック</p>
-                    </div>
-                    <div class="lesson">
+                    </li>
+                    <li class="lesson">
                         <img src="img/lesson_icon02.png" alt="装置の確認">
                         <p>装置の確認</p>
-                    </div>
-                    <div class="lesson">
+                    </li>
+                    <li class="lesson">
                         <img src="img/lesson_icon03.png" alt="短距離走行">
                         <p>短距離走行</p>                 
-                    </div>
-                    <div class="lesson">
+                    </li>
+                    <li class="lesson">
                         <img src="img/lesson_icon04.png" alt="運転相談">
                         <p>運転相談</p>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
             <div class="summary02">
                 <p class="price">体験価格<span class="orange">4,000</span>円<span class="tax">（税込）</span></p>
@@ -60,32 +60,32 @@
                     <span class="line_right"></span>
                 </div>
             </div>
-            <div class="voice_wrap">
-                <div class="voice_content">
+            <ul class="voice_wrap">
+                <li class="voice_content">
                     <figure><img src="img/voice_img01.png" alt="体験者の乗車写真"></figure>
                     <div class="voice_text">
                         <p class="voice_profile">新宿区・40代女性</p>
                         <p class="voice_text01">｢運転が怖くてずっと避けてましたが、先生の声かけで安心できました｣</p>
                         <p class="voice_text02">20年以上ハンドルを握っていなかったのですが、先生が最初から優しく声をかけてくれて、とても安心できました。装置の操作からゆっくり確認してもらえて、｢忘れてても大丈夫なんだ｣と思えてホッとしました。その場で延長してもらい本講習も申し込みました。本当に受けてよかったです。</p>
                     </div>
-                </div>
-                <div class="voice_content">
+                </li>
+                <li class="voice_content">
                     <figure><img src="img/voice_img02.png" alt="体験者の乗車写真"></figure>
                     <div class="voice_text">
                         <p class="voice_profile">中野区・30代男性</p>
                         <p class="voice_text01">｢どんな先生か不安でしたが、相性を確認できて安心｣</p>
                         <p class="voice_text02">人見知りで緊張しやすいタイプなので、いきなり本講習は不安で…。この体験講習で先生と話してみて｢この人なら大丈夫だ｣と思えました。装置の使い方もていねいに教えてくれて、最後の短い走行も怖くなかったです。講習後に｢自分でも運転できた｣という感覚が得られたのが大きな収穫でした。</p>
                     </div>
-                </div>
-                <div class="voice_content">
+                </li>
+                <li class="voice_content">
                     <figure><img src="img/voice_img03.png" alt="体験者の乗車写真"></figure>
                     <div class="voice_text">
                         <p class="voice_profile">杉並区・50代女性</p>
                         <p class="voice_text01">｢教習所よりも丁寧で、運転に対する苦手意識が変わりました｣</p>
                         <p class="voice_text02">20年以上ハンドルを握っていなかったのですが、先生が最初から優しく声をかけてくれて、とても安心できました。装置の操作からゆっくり確認してもらえて、｢忘れてても大丈夫なんだ｣と思えてホッとしました。その場で延長してもらい本講習も申し込みました。本当に受けてよかったです。</p>
                     </div>
-                </div>
-            </div>
+                </li>
+            </ul>
         </section>
 
         <!-- 予約CTA -->
@@ -101,13 +101,274 @@
         <!-- change -->
         <section class="change">
             <h2>ペーパードライバー体験講習受講者の変化</h2>
-            <div class="change_introduction">
+            <div class="content change_introduction">
                 <p>｢たった40分｣でここまで変わった！</p>
                 <p>東京ドライビングサポートが2025年7月に実施した体験講習アンケートの結果（有効回答：48名）から、受講後の変化が明らかになりました。</p>
             </div>
+            <ul class="content chart_wrap01">
+                <li>
+                    <p class="decoration_square">運転に対する不安が強い</p>
+                    <div class="chart_content">
+                        <div class="chart_area before"><p class="data">87.5<span>%</span></p><canvas id="chart01"></canvas></div>                
+                        <div class="triangle"></div>
+                        <div class="chart_area after"><p class="data">21.8<span>%</span></p><canvas id="chart02"></canvas></div>      
+                    </div>
+                </li>
+                <li>
+                    <p class="decoration_square">アクセル・ブレーキ操作に自信がない</p>
+                    <div class="chart_content">
+                        <div class="chart_area before"><p class="data">87.5<span>%</span></p><canvas id="chart03"></canvas></div>                
+                        <div class="triangle"></div>
+                        <div class="chart_area after"><p class="data">21.8<span>%</span></p><canvas id="chart04"></canvas></div>      
+                    </div>
+                </li>
+            </ul>
+            <ul class="content chart_wrap02">
+                <li>
+                    <p>｢教習所より安心だった｣と感じた</p>
+                    <div class="chart_area"><p class="data">87.5<span>%</span></p><canvas id="chart05"></canvas></div>    
+                </li>
+                <li>
+                    <p>講習後すぐに本講習を申し込んだ</p>
+                    <div class="chart_area"><p class="data">21.8<span>%</span></p><canvas id="chart06"></canvas></div>      
+                </li>
+                <li>
+                    <p>｢また受けたい｣と回答した</p>
+                    <div class="chart_area"><p class="data">100<span>%</span></p><canvas id="chart07"></canvas></div>  
+                </li>
+            </ul>
+            <div class="content questionnaire">
+                <p class="decoration_square">体験後の具体的な声(アンケート抜粋)</p>
+                <ul class="questionnaire_wrap">
+                    <li class="questionnaire_content">
+                        <p>｢最初は怖かったけど、先生の一言で一歩踏み出せました｣</p>
+                        <p>(中野区・30代女性)</p>
+                    </li>
+                    <li class="questionnaire_content">
+                        <p>｢想像以上に親切。これなら継続したいと素直に思えた｣</p>
+                        <p>(文京区・50代男性)</p>
+                    </li>
+                    <li class="questionnaire_content">
+                        <p>｢ブレーキもアクセルも思っていたよりできた！｣</p>
+                        <p>(新宿区・40代女性)</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 予約CTA -->
+        <section class="content cta">
+        <p class="cta_explanation01">ご希望の日時を選ぶだけで、<br>すぐにペーパードライバー体験講習の予約ができます。</p>
+        <p class="btn_reservation"><a href=""><img src="img/btn_reservation.png" alt="予約リンクボタン"></a></p>
+        <div class="cta_explanation02">
+            <p>安心してお試しください。</p>
+            <p>※スマホからも予約可能です。</p>
+        </div>
+        </section>
+
+        <!-- ペーパードライバー体験講習とは? -->
+        <section class="content explanation">
+            <h2>ペーパードライバー体験講習とは?</h2>
+            <div class="textarea">
+                <p>はじめての運転練習を、40分で「安心」に変える特別体験。「久しぶりの運転が怖い」「教習所はハードルが高い」「まずは試してみたい」そんな声から生まれたのが、<span class="bold">東京ドライビングサポートの《ペーパードライバー体験講習》</span>です。</p>
+                <p>この体験講習は、新宿本社から都内全域へインストラクターが出張し、運転に不安のある方でも安心して始められる<span class="bold">【40分・4,000円(税込)】</span>のプログラム</p>
+            </div>
+            <ul class="illustration">
+                <li>
+                    <figure><img src="img/lesson_icon04.png" alt="運転相談"></figure>
+                    <div class="illustration_textarea">
+                        <h3>運転に関する個別相談(ヒアリング)</h3>
+                        <p>ブランク年数・苦手意識・目標などを丁寧に伺い、不安を“見える化”</p>
+                    </div>
+                </li>
+                <li>
+                    <figure><img src="img/lesson_icon01.png" alt="講師との相性チェック"></figure>
+                    <div class="illustration_textarea">
+                        <h3>インストラクターとの相性チェック</h3>
+                        <p>実際の会話や指導スタイルを体感し、「この先生なら続けられそうか」を判断</p>
+                    </div>
+                </li>
+                <li>
+                    <figure><img src="img/lesson_icon02.png" alt="装置の確認"></figure>
+                    <div class="illustration_textarea">
+                        <h3>装置操作の体験</h3>
+                        <p>ブレーキ・アクセル・ウインカー・ギアなど、基礎操作をゆっくり確認</p>
+                    </div>
+                </li>
+                <li>
+                    <figure><img src="img/lesson_icon03.png" alt="短距離走行"></figure>
+                    <div class="illustration_textarea">
+                        <h3>短距離走行(実地走行)</h3>
+                        <p>落ち着いた道路で数キロメートル走行して“感覚”を取り戻す</p>
+                    </div>
+                </li>
+            </ul>
         </section>
         
+        <!-- 選ばれる理由 -->
+         <section class="reasons">
+            <h2>選ばれる<span class="orange">3</span>つの理由</h2>
+            <ul class="content reasons_content">
+                <li>
+                    <figure><img src="img/reason01.png" alt="優しく教える"></figure>
+                    <p>教習所よりも柔らかく、優しく教えてもらえる</p>
+                </li>
+                <li>
+                    <figure><img src="img/reason02.png" alt="緊張しない"></figure>
+                    <p>ご自身の車・専門の教習車で練習できるから緊張しにくい</p>
+                </li>
+                <li>
+                    <figure><img src="img/reason03.png" alt="経験豊富"></figure>
+                    <p>経験豊富なインストラクターが担当(指導歴15年以上も在籍)</p>
+                </li>
+            </ul>
+         </section>
 
+        <!-- 予約CTA -->
+        <section class="content cta">
+        <p class="cta_explanation01">ご希望の日時を選ぶだけで、<br>すぐにペーパードライバー体験講習の予約ができます。</p>
+        <p class="btn_reservation"><a href=""><img src="img/btn_reservation.png" alt="予約リンクボタン"></a></p>
+        <div class="cta_explanation02">
+            <p>安心してお試しください。</p>
+            <p>※スマホからも予約可能です。</p>
+        </div>
+        </section>
+
+        <!-- ご案内 -->
+         <section class="guidance">
+            <h2><span class="now">今だけの特別価格＆限定枠</span><br>ペーパードライバー体験講習のご案内</h2>
+            <div class="guidance_content">
+                <p class="content">先着順！<br>ペーパードライバー体験講習<br class="sp">参加者募集中</p>
+                <p class="content price">体験価格<span class="orange">4,000</span>円<span class="tax">（税込）</span></p>
+                <dl class="content">
+                    <div class="table_item">
+                        <dt>対象</dt>
+                        <dd><ul>
+                            <li>運転に不安のある方</li>
+                            <li>10年以上のブランク</li>
+                            <li>初心者歓迎</li>
+                        </ul></dd>
+                    </div>
+                    <div class="table_item">
+                        <dt>条件</dt>
+                        <dd>体験後のアンケートにご協力ください。</dd>
+                    </div>
+                    <div class="table_item">
+                        <dt>募集枠</dt>
+                        <dd>毎月10名限定。</dd>
+                    </div>
+                </dl>
+
+            </div>
+         </section>
     </main>
+
+    <script src="js/chart.min.js"></script>
+    <script>
+        // 円グラフ1
+        const ctx1 = document.getElementById("chart01");
+        const chart1 = new Chart(ctx1, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+            data: [87.5,100 - 87.5],
+            backgroundColor: [
+                '#D4F5DC',
+                '#C9C9C9',
+            ]
+            }]
+        },
+        options: {animation: false,}
+        });
+        // 円グラフ2
+        const ctx2 = document.getElementById("chart02");
+        const chart2 = new Chart(ctx2, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+            data: [21.8,100 - 21.8],
+            backgroundColor: [
+                '#7BC47F',
+                '#C9C9C9',
+            ]
+            }]
+        },
+        options: {animation: false}
+        });
+        // 円グラフ3
+        const ctx3 = document.getElementById("chart03");
+        const chart3 = new Chart(ctx3, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+            data: [87.5,100 - 87.5],
+            backgroundColor: [
+                '#D4F5DC',
+                '#C9C9C9',
+            ]
+            }]
+        },
+        options: {animation: false}
+        });
+        // 円グラフ4
+        const ctx4 = document.getElementById("chart04");
+        const chart4 = new Chart(ctx4, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+            data: [21.8,100 - 21.8],
+            backgroundColor: [
+                '#7BC47F',
+                '#C9C9C9',
+            ]
+            }]
+        },
+        options: {animation: false}
+        });
+        // 円グラフ5
+        const ctx5 = document.getElementById("chart05");
+        const chart5 = new Chart(ctx5, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+            data: [87.5,100 - 87.5],
+            backgroundColor: [
+                '#D4F5DC',
+                '#C9C9C9',
+            ]
+            }]
+        },
+        options: {animation: false,}
+        });
+        // 円グラフ6
+        const ctx6 = document.getElementById("chart06");
+        const chart6 = new Chart(ctx6, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+            data: [21.8,100 - 21.8],
+            backgroundColor: [
+                '#7BC47F',
+                '#C9C9C9',
+            ]
+            }]
+        },
+        options: {animation: false}
+        });
+        // 円グラフ7
+        const ctx7 = document.getElementById("chart07");
+        const chart7 = new Chart(ctx7, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+            data: [100,0],
+            backgroundColor: [
+                '#D4F5DC',
+            ]
+            }]
+        },
+        options: {animation: false}
+        });
+    </script>
 </body>
 </html>
