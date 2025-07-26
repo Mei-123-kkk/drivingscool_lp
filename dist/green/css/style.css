@@ -24,9 +24,10 @@ body {
 }
 .copy01::after {
     position: absolute; top:-15px; left:120px;
-    width: 40px;height: 50px;
+    aspect-ratio: 4 / 5;
+    width: 40px;
     content: "";
-    background: url(../img/mv_beginnermark.png)center / contain;
+    background: url(../img/mv_beginnermark.png)center / contain no-repeat;
 }
 .copy01 h1:first-of-type {
     font-size: 2rem;
@@ -35,7 +36,7 @@ body {
 }
 span.marker {text-decoration: underline #A9D9B6 4px;}
 span.orange {color: #FF9D14;}
-span.fontsz {font-size: 3rem;}
+span.fontsz {font-size: 3rem; font-family:"Plus Jakarta Sans";}
 .copy01 h1:last-of-type{
     font-weight: 900;
     font-size: 2.5rem;
@@ -46,7 +47,7 @@ span.big {
     letter-spacing: 0.8em;
     line-height: 1;
 }
-.copy02 {max-width: 350px;}
+.copy02 {max-width: 450px;}
 .copy02 p {
     padding: 3px 8px;
     font-size: 2rem;
@@ -63,7 +64,7 @@ span.big {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    gap: 0 40px;
+    gap: 0 50px;
     margin: -120px auto 60px;
 }
 .summary01, .summary02 {
@@ -106,7 +107,7 @@ span.big {
 
 /* voice */
 .voice {
-    width: 80vw;
+    width: 85vw;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -160,8 +161,10 @@ span.big {
     padding: 20px;
     border-radius: 20px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 30px;
+    justify-content: center;
+    align-items: center;
 }
 .voice figure {max-width: 500px;}
 .voice_text {
@@ -190,6 +193,7 @@ span.big {
     gap: 15px;
     text-align: center;
     margin-bottom: 50px;
+    max-width: 520px;
 }
 .cta_explanation01 {
     width: 70vw;
@@ -280,7 +284,7 @@ p.data span {font-size: 2rem; padding: 5px 0 0 3px;}
 .chart_wrap02 .chart_area {width: 110px;}
 .chart_wrap02 p.data {font-size: 2rem;}
 .chart_wrap02 p.data span {padding: 0;}
-.questionnaire {display:flex; flex-direction: column; gap: 20px;}
+.questionnaire {display:flex; flex-direction: column; gap: 20px; align-items: center;}
 .questionnaire .decoration_square {text-align: center;}
 .questionnaire_wrap {display:flex; flex-direction: column; gap: 20px;}
 .questionnaire_content {
@@ -312,7 +316,7 @@ p.data span {font-size: 2rem; padding: 5px 0 0 3px;}
 .explanation h2 {font-size: 2.5rem; font-weight: 700; text-align: center;}
 .textarea {display:flex; flex-direction: column; gap: 10px;}
 span.bold {font-weight: 700;}
-.illustration {display:flex; flex-wrap: wrap; gap: 50px;}
+.illustration {display:flex; flex-wrap: wrap; gap: 50px; max-width: 570px; margin: auto;}
 .illustration li {display: flex; gap: 15px;}
 .illustration li figure {
     width: 135px; height: 135px;
@@ -324,7 +328,7 @@ span.bold {font-weight: 700;}
     justify-content: center;
 }
 .illustration li figure img {width: 75%;}
-.illustration_textarea {display:flex; flex-direction: column; gap: 15px; max-width: 200px;}
+.illustration_textarea {display:flex; flex-direction: column; gap: 15px;}
 .illustration_textarea h3 {font-size: 2rem; font-weight: 700; color: #2E8B57;}
 .illustration_textarea p {font-size: 1.2rem;}
 
@@ -417,14 +421,15 @@ span.bold {font-weight: 700;}
 .number {display: flex; flex-direction: column; align-items: center; color: #7BC47F;}
 .number p {font-family:"Plus Jakarta Sans"; font-weight: 700;}
 .number p:last-of-type {font-size: 3rem; border-bottom: #7BC47F solid 2px;}
-.text_box {padding: 15px; background: #fff; border-radius: 10px;}
+.text_box {padding: 15px; background: #fff; border-radius: 10px; height: 100%;}
 .text_box h3 {font-size: 2rem; font-weight: 700; color: #2E8B57; text-align: center; margin-bottom: 10px;}
 .text_box h3 .hearing {font-size: 1.5rem;}
 
 /* faq */
-.faq {background: #D4F5DC; margin-bottom: 60px;}
+.faq {background: #D4F5DC; margin-bottom: 60px; padding-bottom: 10px;}
 .faq h2 {font-size: 3rem; font-weight: 700; padding: 35px 0 55px; text-align: center;}
 /* アコーディオン */
+.accordion_container {max-width: 760px; margin: auto;}
 .accordion_set {
     padding: 25px 10px;
     border-top: #2E8B57 solid 2px;
@@ -484,29 +489,20 @@ span.bold {font-weight: 700;}
 /* news */
 .news {background: #D4F5DC; padding-bottom: 50px;}
 .news h2 {font-size: 3rem; font-weight: 700; padding: 35px 0 55px; text-align: center;}
-.news li {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-    border-top: #2E8B57 solid 2px;
-    padding: 20px 5px;
-}
-.date {width: 100%; font-weight: 700;}
-.news_content {
-    display: flex;
-    gap: 10px;
-}
+.news li {display: flex; flex-direction: column; gap: 10px; border-top: #2E8B57 solid 2px; padding: 20px 5px;}
+.date {font-weight: 700;}
+.news_content {display: flex; gap: 10px;}
 .category {
     color: #fff;
     background: #FF9D14;
     border-radius: 5px;
     width: 100px;
-    height: 25px;
+    height: 1.7em;
+    line-height: 1.7;
     text-align: center;
     flex-shrink: 0;
 }
-.news li:last-of-type {justify-content: right;}
+.btn_detail {display: flex; justify-content: flex-end;}
 .btn_detail a {color: #fff; background: #7BC47F; padding: 5px 12px; border-radius: 20px;}
 
 /* footer */
@@ -525,27 +521,75 @@ small {font-size: 1.2rem;}
 
 /* 【TB】---------- */
 @media screen and (min-width:768px) {
+    /* トップの文字サイズ調整 */
+    .copy01 h1:first-of-type{font-size: min(2.5vw, 32px)}
+    span.fontsz, .copy01 h1:last-of-type{font-size: min(4vw, 51px);}
+    span.big {font-size: min(5.6vw, 71px);}
+    .copy02 p, .price {font-size: min(2vw, 25.4px);} 
+    .price .orange {font-size: min(6.45vw, 82px);}
+    .price .tax {font-size: min(1.25vw, 16px);}
+    .lesson p {font-size: clamp(13px, 1.25vw, 16px);}
+
     .sp {display: none;}
     .mv {padding: 50px 0 160px;}
-    .mv_img {
-        background-image: url(../img/mv_pc.jpg);
-        padding: 0px 0 100px;
-    }
-    .copy_wrap {
-        max-width: 800px;
-        margin: auto;
-        padding-left: 20px;
-    }
+    .mv_img {background-image: url(../img/mv_pc.jpg); padding: 0px 0 120px;}
+    .copy_wrap {padding-left: 30px;}
     .copy01 {padding-left: 0px;}
-    .copy01 h1:first-of-type {margin-bottom: 0;}
-    .copy02 p:first-of-type {margin: 10px 0 8px;}
-    .summary {margin-top: -240px;}
-    .summary01, .summary02 {max-width: 380px;}
-    .copy01 h1:first-of-type {font-size: 2.4rem;}
-    span.fontsz {font-size: 4rem;}
-    .copy01 h1:last-of-type{font-size: 3.8rem;}
-    span.big {font-size: 5.4rem;}
-    .copy01::after {top:70px; right:-10px; left: auto;}
-    .price {text-shadow:1px 2px 0 #fff;}
+    .copy01::after {width: 4vw; max-width: 52px; top:90px; right:-20px; left: auto;}
+    .copy02 p:first-of-type {margin: 20px 0 8px;}
+    .summary {margin-top: -250px;}
+    .summary01, .summary02 {max-width: min(43vw, 545px);} 
+    .price {line-height: 1; margin-bottom: 30px; text-shadow:1px 2px 0 #fff;}
+    .btn_reservation, .btn_contact {width: 39vw; max-width: 490px;}
+    .voice {width: 95VW; max-width: 1200px;}
+    .voice_content {flex-direction: row;}
+    .voice_title {margin-bottom: 90px;}
+    .voice figure {flex-shrink: 0; width: 40%;}
+    .change {gap: 60px;}
+    .change_introduction {text-align: center;}
+    .chart_content {width: auto;}
+    .chart_wrap02 {gap: 40px;}
+    .chart_wrap02 li, .chart_wrap02 .chart_area, .chart_area {width: 150px;}
+    .questionnaire {gap: 30px;}
+    .questionnaire_content {align-items: center; width: 700px;}
+    .illustration {justify-content: center;}
+    .illustration li {flex-direction: column; align-items: center; max-width: 200px;}
+    .illustration_textarea h3 {text-align: center;}
+    .explanation {padding: 50px;}
+    .explanation h2 {font-size: 3rem;}
+    .textarea {width: 85%; max-width: 710px; margin: auto;}
+    .reasons_content {flex-direction: row; justify-content: space-between;}
+    .reasons_content li {flex-direction: column-reverse; justify-content: space-between; width: 30%; padding: 25px;}
+    .reasons_content li p {text-align: center;}
+    .reasons_content li figure {width: 160px;}
+    .bg_gradation {background-image: linear-gradient(0deg, #fff, #a4daa7);}
+    .guidance_content {background-image: none;}
+    .guidance_content dl {width: 70%; max-width: 600px;}
+    .guidance_content dt {width: 120px;}
+    .guidance_content .table_item {padding: 15px;}
+    .instructor_introduction {max-width: 770px; margin: auto;}
+    .introduction__wrap, .photo {width: 45%;}
+    .introduction__wrap figure {margin: 0;}
+    .instructor_name, .achievements {justify-content: flex-start;}
+    .achievements {padding: 10px 15px;}
+    .comment {width: 65%; margin: 0 0 30px; padding: 30px; position: relative; top: -30px;}
+    .flow_wrap {flex-direction: row; justify-content: space-between;}
+    .flow_wrap li {flex-direction: column; align-items: flex-start; width: 30%;}
+    .text_box {padding: 20px;}
+    .accordion_q {align-items: center;}
+    .contact {display: flex; flex-wrap: wrap;gap: 0 50px; justify-content: center;}
+    .contact .cta {margin: 0 0 50px;}
+    .news ul {max-width: 760px;}
+    .news li {flex-direction: row; gap: 20px;}
+    .news li:last-of-type {justify-content: flex-end;}
+    .news_content{gap: 20px;}
+}
 
+/* 【PC】---------- */
+@media screen and (min-width:960px) {
+    html {font-size: calc(62.5% * 1.2);}
+    .voice_content {padding: 30px;}
+    .chart_wrap02 li, .chart_wrap02 .chart_area, .chart_area {width: 200px;}
+    .illustration li {max-width: 260px;}
+    .category {width: 130px;}
 }
